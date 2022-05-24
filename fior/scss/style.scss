@@ -1,0 +1,116 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+header{
+    .container{
+        .row{
+            .col-md-2{
+                img{
+                    width: 210px;
+                    // object-fit: cover;
+                }
+            }
+            .col-md-8{
+                nav{
+                    .nav{
+                        ul>li{
+                            position: relative;
+                            &:hover >.home-list{
+                                visibility: visible;
+                                height: 270px;
+                                transition: 1s;
+                                opacity: 100%;
+                            }
+                            &:hover>.pages-list{
+                                visibility: visible;
+                                height: 150px;
+                                transition: 1s;
+                                opacity: 100%;
+                            }
+                            a{
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    background-color: black;
+                                    width: 0%;
+                                    height: 1px;
+                                    bottom: -4px;
+                                    left: 0px;
+                                    transition: 0.5s;
+
+                                 
+                                }
+
+                                &:hover::before{
+                                    content: "";
+                                    position: absolute;
+                                    background-color: black;
+                                    height: 1px;
+                                    bottom: -4px;
+                                    left: 0px; 
+                                   width: 100%;
+                                }
+                                
+                            }
+                            .home-list{
+                                position: absolute;
+                                top: 30px;
+                                width: 150px;
+                                visibility: hidden;
+                                height: 0px;
+                                opacity: 0%;
+                                overflow: hidden;
+                                transition: 1s;
+                                z-index: 20;
+                                background-color: white;
+
+                            }
+
+                            .pages-list{
+                                position: absolute;
+                                top: 30px;
+                                width: 150px;
+                                visibility: hidden;
+                                height: 0px;
+                                opacity: 0%;
+                                overflow: hidden;
+                                transition: 1s;
+                                z-index: 20;
+                                background-color: white;
+
+                            }
+                        }
+                    }
+                }
+                .nav-card{
+                    .fa-magnifying-glass{
+                        transition: 0.5s;
+                        color: black;
+                        cursor: pointer;
+                        &:hover{
+                        color: #f5675a;
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+main{
+    #slider{
+        .carousel{
+            position: relative;
+            .carousel-content{
+                width: 520px;
+                position: absolute;
+                top: 150px;
+                left: 200px;
+                z-index: 10;
+            }
+        }
+    }
+}

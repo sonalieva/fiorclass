@@ -1,0 +1,106 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+header .container .row .col-md-2 img {
+  width: 210px;
+}
+
+header .container .row .col-md-8 nav .nav ul > li {
+  position: relative;
+}
+
+header .container .row .col-md-8 nav .nav ul > li:hover > .home-list {
+  visibility: visible;
+  height: 270px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 100%;
+}
+
+header .container .row .col-md-8 nav .nav ul > li:hover > .pages-list {
+  visibility: visible;
+  height: 150px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 100%;
+}
+
+header .container .row .col-md-8 nav .nav ul > li a {
+  position: relative;
+}
+
+header .container .row .col-md-8 nav .nav ul > li a::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0%;
+  height: 1px;
+  bottom: -4px;
+  left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .container .row .col-md-8 nav .nav ul > li a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  bottom: -4px;
+  left: 0px;
+  width: 100%;
+}
+
+header .container .row .col-md-8 nav .nav ul > li .home-list {
+  position: absolute;
+  top: 30px;
+  width: 150px;
+  visibility: hidden;
+  height: 0px;
+  opacity: 0%;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 20;
+  background-color: white;
+}
+
+header .container .row .col-md-8 nav .nav ul > li .pages-list {
+  position: absolute;
+  top: 30px;
+  width: 150px;
+  visibility: hidden;
+  height: 0px;
+  opacity: 0%;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 20;
+  background-color: white;
+}
+
+header .container .row .col-md-8 .nav-card .fa-magnifying-glass {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+  cursor: pointer;
+}
+
+header .container .row .col-md-8 .nav-card .fa-magnifying-glass:hover {
+  color: #f5675a;
+}
+
+main #slider .carousel {
+  position: relative;
+}
+
+main #slider .carousel .carousel-content {
+  width: 520px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  z-index: 10;
+}
+/*# sourceMappingURL=style.css.map */
