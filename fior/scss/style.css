@@ -112,8 +112,8 @@ main #slider .carousel .carousel-content {
 
 #filter-flowers ul li {
   list-style: none;
-  margin: 20px;
-  font-size: 18px;
+  margin: 26px;
+  font-size: 14px;
   -webkit-transition: all .8s;
   transition: all .8s;
 }
@@ -145,8 +145,8 @@ main #slider .carousel .carousel-content {
 }
 
 #filter-flowers .card-element .card-img img {
-  width: 00px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
 }
 
 #filter-flowers .card-element .card-body {
@@ -172,5 +172,62 @@ main #slider .carousel .carousel-content {
 
 .active {
   color: #f34f3f;
+}
+
+#sec-third {
+  background-color: #faf2e5;
+}
+
+#sec-third .flower-card {
+  width: 100%;
+  height: 500px;
+}
+
+#sec-third .flower-card .img-div {
+  position: relative;
+}
+
+#sec-third .flower-card .img-div img {
+  width: 500px;
+  height: 300px;
+  padding-top: 50px;
+}
+
+#sec-third .flower-card .img-div .icon {
+  top: 45%;
+  left: 40%;
+  position: absolute;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#sec-third .flower-card .img-div .icon .fa-play {
+  font-size: 24px;
+  color: black;
+  position: absolute;
+  left: 30px;
+  top: 22px;
+}
+
+.btn-primary {
+  background-color: white !important;
+  left: 30px  !important;
+  top: 45%;
+}
+
+#four-sec .desflow {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 25%;
+}
+
+#four-sec .desflow .img {
+  position: relative;
+  vertical-align: middle;
+  width: 200px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
